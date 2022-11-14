@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import "./style.css";
 
-export default () => {
+const OuvragesList = () => {
   const [status, setStatus ] = useState('Chargement...');
   const [ouvrages, setOuvrages ] = useState(null);
 
@@ -33,3 +33,5 @@ export default () => {
     </>
   );
 }
+
+export default OuvragesList;
