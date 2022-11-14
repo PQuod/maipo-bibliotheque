@@ -26,7 +26,7 @@ const OuvragesList = () => {
       <div key={ index }>
         <div className="ouvrage">
           <h2>{ ouvrage.title } &middot; </h2>
-          <p>{ ouvrage.nom } { ouvrage.prenom }</p>
+          <p>Auteur : { ouvrage.nom } { ouvrage.prenom }</p>
         </div>
       </div>
     ))}
