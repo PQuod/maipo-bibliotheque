@@ -1,5 +1,3 @@
-// get-testimonials.js
-
 const query = require("./utils/query");
 
 const GET_OUVRAGES = `
