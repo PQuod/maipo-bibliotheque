@@ -1,0 +1,14 @@
+type Ouvrage {
+  title: String!
+  nom: String!
+  prenom: String!
+  trad: String!
+  editions: String!
+  annee: String!
+  pages: String!
+  categorie: String!
+}
+
+type Query {
+  allOuvrages: [Ouvrage!]!
+}
