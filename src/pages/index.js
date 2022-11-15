@@ -21,15 +21,21 @@ const OuvragesList = () => {
 
   return (
     <>
-    <h1>Liste des ouvrages</h1>
-    {ouvrages && ouvrages.map((ouvrage, index) =>(
-      <div key={ index }>
-        <div className="ouvrage">
-          <h2>{ ouvrage.title } &middot; </h2>
-          <p>Auteur : { ouvrage.nom } { ouvrage.prenom }</p>
-        </div>
+    <main class="page-content">
+      <div id="left">
       </div>
-    ))}
+      <article>
+        <h1>Liste des ouvrages</h1>
+        {ouvrages && ouvrages.map((ouvrage, index) =>(
+          <div key={ index }>
+            <div className="ouvrage">
+              <h2>{ ouvrage.title } &middot; </h2>
+              <p>Auteur : { ouvrage.nom } { ouvrage.prenom }</p>
+            </div>
+          </div>
+        ))}
+      </article>
+    </main>
     </>
   );
 }
