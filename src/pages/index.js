@@ -8,7 +8,7 @@ const OuvragesList = () => {
 
   useEffect(() => {
     if (status !== "Chargement...") return;
-    axios("/api/get-ouvrages").then(result => {
+    axios("/gatsby_api/get-ouvrages").then(result => {
       if (result.status !== 200) {
         console.error("Erreur au chargement des ouvrages");
         console.error(result);
