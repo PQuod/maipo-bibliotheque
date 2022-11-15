@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Header from "../components/header";
 import "./style.css";
 
 const OuvragesList = () => {
@@ -23,6 +24,7 @@ const OuvragesList = () => {
     <>
     <main class="page-content">
       <div id="left">
+        <Header />
       </div>
       <article>
         <h1>Liste des ouvrages</h1>

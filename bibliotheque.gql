@@ -7,6 +7,21 @@ type Ouvrage {
   annee: String!
   pages: String!
   categorie: String!
+  emprunt: Emprunt!
+}
+
+type Adherent {
+  nom: String!
+  prenom: String!
+  email: String!
+  tel: String!
+  emprunt: Emprunt!
+}
+
+type Emprunt {
+  date: String!
+  emprunteur: Adherent!
+  emprunts: [Ouvrage!] @relation
 }
 
 type Query {

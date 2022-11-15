@@ -1,5 +1,3 @@
-// create-testimonial.js
-
 const query = require("./utils/query");
 
 const CREATE_OUVRAGE = `

@@ -1,5 +1,3 @@
-// update-testimonial.js
-
 const query = require("./utils/query");
 
 const UPDATE_OUVRAGE = `

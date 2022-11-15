@@ -1,5 +1,3 @@
-// delete-testimonial.js
-
 const query = require("./utils/query");
 
 const DELETE_OUVRAGE = `
